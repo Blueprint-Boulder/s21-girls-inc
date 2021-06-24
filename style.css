@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 20px auto 0 auto;
+}
+
+.blog-post {
+  width: 45%;
+  float: left;
+  padding-right: 30px;
+  margin-right: 50px;
+  position: relative;
+  border: 1px solid #db364e;
+  text-align: center;
+}
+
+.other-posts {
+  width: 50%;
+  float: left;
+  border: 1px solid #db364e;
+}
+
+/* .blog-post img {
+  height: 150px;
+  width: auto;
+} */
+
+.tab-container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #db364e;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.button-container {
+  width: 50%;
+  float: left;
+}
+
+.milestonesTitle {
+  font-weight: 500;
+  margin-top: 30px;
+  font-size: 83%;
+  letter-spacing: 0.5px;
+}
+.milestone-cards-container {
+  margin-top: 30px;
+}
+
+.milestone-cards {
+  border: #db364e solid 1px;
+  width: 31%;
+  margin-left: 55px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+progress {
+  border-radius: 10px;
+  width: 130px;
+  height: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+progress::-webkit-progress-bar {
+  background-color: #f8d7dc;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background-color: #ed1849;
+  border-radius: 10px;
+  /* box-shadow: 1px 1px 5px 3px rgba(255, 0, 0, 0.8); */
+}
+progress::-moz-progress-bar {
+  /* style rules */
+}
+
+img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 25px;
+  color: #db364e;
+  text-align: center;
+  margin-top: 20px;
+}
+.other {
+  margin-bottom: 20px;
+}
+.smallText {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #808080;
+}
+.rightText {
+  font-size: 12px;
+  color: #808080;
+  text-align: right;
+}
+.blog-post img {
+  height: 150px;
+  width: auto;
+}
