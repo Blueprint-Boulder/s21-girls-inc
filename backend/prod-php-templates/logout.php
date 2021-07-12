@@ -1,4 +1,8 @@
 <?php
 do_action('end_session_action');
-echo "After logout".$_SESSION['<UN field name>'];
+if($_SESSION['<UN name field>'] != "")
+{
+    header('Location: //www.girlsincdenver.org/bb-girls_inc_game/bb-logout/');
+    exit();
+}
 ?>

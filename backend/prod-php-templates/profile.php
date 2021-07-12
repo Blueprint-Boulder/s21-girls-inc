@@ -1,12 +1,12 @@
 <?php
 
 function findEntry($username) {
-    $form_id = '#'; // Create Account Form ID
+    $form_id = '#'; // Create account form (prod)
     $search_criteria = array(
         'status'        => 'active',
         'field_filters' => array(
             array(
-                'key'   => '#',     // Field ID for username
+                'key'   => '#',     // Field ID for username (prod)
                 'value' => $username,
             ),
         )
@@ -19,14 +19,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET')
 {
     // This is currently the entry for module user submitted
     $field_id = '#'; // Score field
+    $first = '#'; // first name
+    $last = '#'; // last name
+    $bday = '#'; // birthday
     $resp = findEntry($_SESSION['<UN field name>']);
     if(empty($resp)) {
         header('Location: //www.girlsincdenver.org/bb-girls_inc_game/');
         exit();
     }
     $entry = $resp[0];
-    $entry[ $field_id ] = $entry[ $field_id ] + 5;
-    $result = GFAPI::update_entry( $entry );
-    return $result;
+    echo '<div style="margin-bottom: 4%;"><b>'.$entry[$first].' '.$entry[$last].'</b></div>';
+    echo '<div style="margin-bottom: 4%;">'.$entry[$field_id].' points</div>';
+    echo '<div style="margin-bottom: 4%;">'.$entry[$bday].'</div>';
 }
 ?>
